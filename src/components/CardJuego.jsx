@@ -1,3 +1,4 @@
+import { formatearPrecio } from '../utils/formatters';
 
 export function CardJuego(props) {
     const juego = props.juego;
@@ -15,7 +16,7 @@ export function CardJuego(props) {
                         {juego.nombre}
                     </h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">
-                        {juego.precio}
+                        {formatearPrecio(juego.precio)}
                     </h6>
                     <p className="card-text">
                         {juego.descripcion}
