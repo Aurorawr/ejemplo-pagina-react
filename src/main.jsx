@@ -7,6 +7,7 @@ import { Catalago } from './pages/catalogo.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import { Header } from './components/Header.jsx'
 import { Footer } from './components/Footer.jsx'
+import { CompraRealizada } from './pages/compraRealizada.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='' element={<Inicio />} />
         <Route path='/tienda' element={<Catalago />} />
         <Route path='/demo' element={<App />} />
+        <Route path='/compraRealizada' element={<CompraRealizada />} />
       </Routes>
       <Footer />
     </BrowserRouter>
